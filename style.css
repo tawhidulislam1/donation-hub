@@ -11,15 +11,13 @@
 .btn-group {
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 10px;
   justify-content: center;
 }
 .btn-group .btn-lg {
   margin-left: 20px;
 }
-main {
-  height: 55500px;
-}
+
 .sticky {
   position: sticky;
   width: 100%;
@@ -30,13 +28,35 @@ main {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
-.half-width{
-    width: 70%;
-    margin-left: 15%;
+.half-width {
+  width: 70%;
+  margin-left: 15%;
 }
-.card-body{
-    width: 50%;
+.card{
+  border: 1px solid #00000060;
+  margin: 20px 0;
+  padding: 10px 14px;
 }
-.donate{
-  padding: 14px ;
+.card-body {
+  width: 50%;
+}
+.donate {
+  padding: 14px;
+}
+
+.img-box {
+  text-align: center;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.congo{
+  font-size:36px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 1020px) {
+  .card-body {
+    width: 100%;
+  }
 }

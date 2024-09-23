@@ -4,8 +4,8 @@ function mainBalance() {
   return mainBalance;
 }
 
-function donatingAmount() {
-  const donatedAmount = document.getElementById("donating-amount").innerText;
+function donatingAmount(id) {
+  const donatedAmount = document.getElementById(id).innerText;
   const totalDonateAmount = parseFloat(donatedAmount);
   return totalDonateAmount;
 }
