@@ -30,7 +30,7 @@
                             </div>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                <li><a class="actives" href="#">Blog</a></li>
+                                <li><a class="actives" href="blog.html">Blog</a></li>
                             </ul>
                         </div>
                         <ul class="menu menu-horizontal px-1 hidden lg:flex">
@@ -150,23 +150,30 @@
             </section>
         </main>
 
-        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-        <div class="modal hidden" id="modal" role="dialog">
-            <div class="modal-box text-center">
-                <h3 class="text-lg font-bold congo">Congrates!</h3>
-                <div class="img-box">
-                    <img src="assets/coin.png" alt="">
-                </div>
-                <p class="py-4">Your have donated for humankind</p>
-                <h4 class="text-xl font-bold">Successfull!</h4>
+        <dialog id="modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box flex flex-col justify-end items-center">
+              <h1 class="text-4xl font-extrabold text-center mb-6">
+                Congrates!
+              </h1>
 
-                <div class="modal-action">
-                    <label for="my_modal_6" class="btn" id="clear-confo">Clear Confermation!</label>
-                </div>
+              <img src="assets/coin.png" alt="" class="w-14 mb-6" />
+
+              <p class="text-xl text-gray-800 font-light">
+                You Have Donated for Humankid
+              </p>
+              <span class="py-4 font-bold text-2xl">Successfully</span>
+              <div class="modal-action">
+                <form method="dialog">
+                  <button class="btn text-lg text-gray-700">
+                    Close confirmation
+                  </button>
+                </form>
+              </div>
             </div>
-        </div>
-        <script src="js/index.js"></script>
+          </dialog>
         <script src="js/libray.js"></script>
+        <script src="js/index.js"></script>
+        
 
     </body>
 </html>
