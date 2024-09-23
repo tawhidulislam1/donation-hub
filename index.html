@@ -57,12 +57,12 @@
                 </div>
             </nav>
             <div class="btn-group">
-                <button class="actives btn btn-lg btn-outline">Donation</button>
-                <button class="btn btn-lg btn-outline">History</button>
+                <button class="actives btn btn-lg btn-outline" id="donated">Donation</button>
+                <button class="btn btn-lg btn-outline" id="history">History</button>
             </div>
         </header>
         <main>
-            <section id="donate" class="hidden half-width my-10">
+            <section id="donate" class=" half-width my-10">
                 <div class="container mx-auto ">
                     <div class="card lg:card-side bg-base-100 shadow-xl">
                         <figure>
@@ -107,7 +107,7 @@
                                 <span id="donating-amount-feni">00</span>
                                 <span>BDT</span>
                             </h6>
-                            <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+                            <h2 class="card-title" id="feni-title"> Donate for Flood Relief in Feni,Bangladesh</h2>
                             <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                             <input type="text"
                                 placeholder="Write Donation Amount"
@@ -129,7 +129,7 @@
                                 <span id="donating-amount-qouta">100</span>
                                 <span>BDT</span>
                             </h6>
-                            <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                            <h2 class="card-title" id="qouta-title">Aid for Injured in the Quota Movement</h2>
                             <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need..</p>
                             <input type="text"
                                 placeholder="Write Donation Amount"
@@ -141,13 +141,10 @@
                   
                 </div>
             </section>
-            <section>
+            <section id="history-section" class="hidden">
                 <div class="container mx-auto ">
-                    <div class="card bg-base-100 w-full shadow-xl">
-                        <div class="card-body">
-                          <h2 class="card-title">Card title!</h2>
-                          <p>If a dog chews shoes whose shoes does he choose?</p>
-                        </div>
+                    <div class="card bg-base-100 w-full shadow-xl" id="histoy">
+                        
                       </div>
                 </div>
             </section>

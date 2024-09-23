@@ -18,7 +18,7 @@ function donateAmount(id) {
 
 function showDivSection(id) {
   document.getElementById("donate").classList.add("hidden");
-  document.getElementById("div-cashout").classList.add("hidden");
+  document.getElementById("history-section").classList.add("hidden");
 
   document.getElementById(id).classList.remove("hidden");
 }
